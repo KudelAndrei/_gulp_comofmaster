@@ -46,15 +46,38 @@ a
 	&:focus, &:active, &:hover
 		text-decoration: none
 
+/* кнопка */
+.button, a.button
+	display: inline-block
+	padding: 10px 30px
+	color: #fff
+	background-color: $accent
+	border: none
+	cursor: pointer
+	transition: background-color 0.2s ease
+	&:hover
+		background-color: lighten($accent, 5%)
+
+
 /* Шапка */
 .header
 	background-color: $dark
 	background-position: center center
 	min-height: 700px
 	height: 100vh
+	position: relative
+	&::before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(#000, .4)
+		z-index: 0
 
 	.header-top
-		background-color: $dark
+		background-color: lighten($dark, 10%)
 	
 	/* logo */
 	.logo
@@ -125,6 +148,75 @@ a
 			transition: border-bottom 0.1s ease
 			&:hover
 				border-bottom: 2px dotted transparent
+	
+	.header-center
+		width: 100%
+
+		.flex-center
+			transform: translateY(50%)
+			color: #fff
+			text-align: center
+		
+		.header__head
+			margin: 0
+			font-size: 40px
+			text-transform: uppercase
+
+		.header__desc
+			font-weight: 300
+			margin-top: 5px
+			margin-bottom: 30px
+
+		.header-plus
+			text-align: left
+			margin-left: 126px
+			margin-bottom: 30px
+			.header-plus__item
+				display: block
+				margin-bottom: 10px
+				font-size: 20px
+				font-style: italic
+				.fa 
+					color: $blue
+					margin-right: 10px
+					font-size: 20px
+
+		.header__btn
+			font-size: 24px
+	
+	/* нижняя часть */
+	.header-bottom
+		text-align: center
+		position: absolute
+		bottom: 0
+		width: 100%
+		background-color: rgba(#000, .5)
+		color: #fff
+		padding: 10px 0
+		border-top: 1px solid rgba(#fff, .1)
+
+	
+		.header-bottom__item
+			font-weight: 300
+			.fa
+				margin-right: 10px
+				opacity: .7
+			a 
+				color: #fff
+		
+		.header-soc
+			text-align: right
+			.header-soc__item
+				display: inline-block
+				font-size: 20px
+				line-height: 1
+				margin-right: 10px
+				a
+					color: rgba(#fff, .8)
+				&:hover
+					a
+						color: rgba(#fff, 1)
+
 
 			
 @import "media" // Всегда в конце
