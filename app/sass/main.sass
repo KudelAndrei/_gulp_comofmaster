@@ -63,7 +63,7 @@ a
 .header
 	background-color: $dark
 	background-position: center center
-	min-height: 700px
+	min-height: 620px
 	height: 100vh
 	position: relative
 	&::before
@@ -77,7 +77,10 @@ a
 		z-index: 0
 
 	.header-top
-		background-color: lighten($dark, 10%)
+		background-color: $dark
+		position: absolute
+		width: 100%
+		z-index: 1
 	
 	/* logo */
 	.logo
@@ -150,12 +153,14 @@ a
 				border-bottom: 2px dotted transparent
 	
 	.header-center
-		width: 100%
+		position: relative
+		text-align: center
+		display: flex
+		height: 100%
+		color: #fff
 
 		.flex-center
-			transform: translateY(50%)
-			color: #fff
-			text-align: center
+			margin: auto
 		
 		.header__head
 			margin: 0
