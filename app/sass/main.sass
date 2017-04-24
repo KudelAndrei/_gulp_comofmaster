@@ -58,6 +58,15 @@ a
 	&:hover
 		background-color: lighten($accent, 5%)
 
+/* серый фон */
+.s-gray
+	background-color: $gray
+.s-head
+	font-size: 26px
+	text-transform: uppercase
+	font-weight: 700
+	text-align: center
+	margin: 30px 0
 
 /* Шапка */
 .header
@@ -121,107 +130,160 @@ a
 				>a 
 					background-color: #424141
 					text-decoration: none
+
+.flex-center
+	margin: auto
+	z-index: 1
 	
-	/* Обратная связь */
-	.call
-		margin-top: 20px
-		.phone
-			color: #fff
-			display: inline-block
-			line-height: 1.2
-			span 
-				font-size: 14px
-				opacity: .8
-			.fa 
-				margin-right: 8px
-				transition: transform 0.2s ease
-			&:hover
-				.fa
-					transform: scale(1.3)
-		.callback
-			font-size: 20px
-			letter-spacing: 1.5px
-			line-height: 1.3
-			background-color: transparent
-			color: $accent
-			border: none
-			padding: 0
-			outline: none
-			border-bottom: 2px dotted $accent
-			transition: border-bottom 0.1s ease
-			&:hover
-				border-bottom: 2px dotted transparent
-	
-	.header-center
-		position: relative
-		text-align: center
-		display: flex
-		height: 100%
+/* Обратная связь */
+.call
+	margin-top: 20px
+	.phone
 		color: #fff
-
-		.flex-center
-			margin: auto
-		
-		.header__head
-			margin: 0
-			font-size: 40px
-			text-transform: uppercase
-
-		.header__desc
-			font-weight: 300
-			margin-top: 5px
-			margin-bottom: 30px
-
-		.header-plus
-			text-align: left
-			margin-left: 126px
-			margin-bottom: 30px
-			.header-plus__item
-				display: block
-				margin-bottom: 10px
-				font-size: 20px
-				font-style: italic
-				.fa 
-					color: $blue
-					margin-right: 10px
-					font-size: 20px
-
-		.header__btn
-			font-size: 24px
-	
-	/* нижняя часть */
-	.header-bottom
-		text-align: center
-		position: absolute
-		bottom: 0
-		width: 100%
-		background-color: rgba(#000, .5)
-		color: #fff
-		padding: 10px 0
-		border-top: 1px solid rgba(#fff, .1)
-
-	
-		.header-bottom__item
-			font-weight: 300
+		display: inline-block
+		line-height: 1.2
+		span 
+			font-size: 14px
+			opacity: .8
+		.fa 
+			margin-right: 8px
+			transition: transform 0.2s ease
+		&:hover
 			.fa
-				margin-right: 10px
-				opacity: .7
-			a 
-				color: #fff
-		
-		.header-soc
-			text-align: right
-			.header-soc__item
-				display: inline-block
-				font-size: 20px
-				line-height: 1
-				margin-right: 10px
-				a
-					color: rgba(#fff, .8)
-				&:hover
-					a
-						color: rgba(#fff, 1)
+				transform: scale(1.3)
+	.callback
+		font-size: 20px
+		letter-spacing: 1.5px
+		line-height: 1.3
+		background-color: transparent
+		color: $accent
+		border: none
+		padding: 0
+		outline: none
+		border-bottom: 2px dotted $accent
+		transition: border-bottom 0.1s ease
+		&:hover
+			border-bottom: 2px dotted transparent
 
+.header-center
+	position: relative
+	text-align: center
+	display: flex
+	height: 100%
+	color: #fff
+	
+	.header__head
+		margin: 0
+		font-size: 40px
+		text-transform: uppercase
+
+	.header__desc
+		font-weight: 300
+		margin-top: 5px
+		margin-bottom: 30px
+
+	.header-plus
+		text-align: left
+		margin-left: 126px
+		margin-bottom: 30px
+		.header-plus__item
+			display: block
+			margin-bottom: 10px
+			font-size: 20px
+			font-style: italic
+			.fa 
+				color: $blue
+				margin-right: 10px
+				font-size: 20px
+
+	.header__btn
+		font-size: 24px
+
+/* нижняя часть */
+.header-bottom
+	text-align: center
+	position: absolute
+	bottom: 0
+	width: 100%
+	background-color: rgba(#000, .5)
+	color: #fff
+	padding: 10px 0
+	border-top: 1px solid rgba(#fff, .1)
+
+
+	.header-bottom__item
+		font-weight: 300
+		.fa
+			margin-right: 10px
+			opacity: .7
+		a 
+			color: #fff
+	
+	.header-soc
+		text-align: right
+		.header-soc__item
+			display: inline-block
+			font-size: 20px
+			line-height: 1
+			margin-right: 10px
+			a
+				color: rgba(#fff, .8)
+			&:hover
+				a
+					color: rgba(#fff, 1)
+
+/* Услуги */
+.services
+	padding-bottom: 60px
+	.services__card
+		min-height: 250px
+		background-size: cover
+		background-color: #000
+		position: relative
+		display: flex
+		margin-bottom: 20px
+		color: #fff
+		overflow: hidden
+		padding: 20px
+		transition: transform 0.4s ease-in-out
+		&:hover
+			transform: scale(1.05)
+			&::before
+				background-color: rgba($blue, 0.4)
+		&::before
+			position: absolute
+			content: ""
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: rgba(#000, .6)
+			transition: background-color 0.4s ease-in-out
+			z-index: 0
+		.services__icon
+			font-size: 30px
+		.services__head
+			margin: 0
+			margin-bottom: 20px
+			line-height: 1.4
+			font-weight: 500
+			text-transform: uppercase
+			font-size: 22px
+		.services__price
+			position: absolute
+			bottom: 0
+			left: -20px
+			text-align: center
+			font-weight: 700
+			font-size: 18px
+			padding: 10px
+			background-color: #fff
+			color: #000
+			transform: skewX(20deg)
+			width: 75%
+			span
+				transform: skewX(-20deg)
+				display: inline-block
 
 			
 @import "media" // Всегда в конце
