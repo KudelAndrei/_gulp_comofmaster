@@ -218,19 +218,20 @@ a
 			opacity: .7
 		a 
 			color: #fff
-	
-	.header-soc
-		text-align: right
-		.header-soc__item
-			display: inline-block
-			font-size: 20px
-			line-height: 1
-			margin-right: 10px
+
+/* соц иконки */
+.soc
+	text-align: right
+	.soc__item
+		display: inline-block
+		font-size: 20px
+		line-height: 1
+		margin-right: 10px
+		a
+			color: rgba(#fff, .8)
+		&:hover
 			a
-				color: rgba(#fff, .8)
-			&:hover
-				a
-					color: rgba(#fff, 1)
+				color: rgba(#fff, 1)
 
 /* Услуги */
 .services
@@ -289,5 +290,17 @@ a
 /* о компании */		
 .about
 	padding-bottom: 60px
+
+/* футер */
+.footer
+	padding-bottom: 60px
+
+
+
+.copyright
+	padding: 10px
+	background-color: $dark
+	color: rgba(#fff, .7)
+	font-weight: 300
 
 @import "media" // Всегда в конце

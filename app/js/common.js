@@ -6,6 +6,9 @@ $(window).on('load', function(){
 /* scripts ready */
 $(document).ready(function(){
 
-	console.log('ready');
-	
+	$('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+	});
 });
