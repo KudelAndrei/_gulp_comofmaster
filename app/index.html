@@ -30,12 +30,18 @@
 
 <body class="is-home">
 
-	<!-- вставить прелоадер 
-		http://cssload.net/ru
- -->
+	<!-- прелоадер -->
+	<div class="preloader">
+		<div class="cssload-loader">
+			<div class="cssload-flipper">
+				<div class="cssload-front"></div>
+				<div class="cssload-back"></div>
+			</div>
+		</div>
+	</div>
 
-	<header class="header" style="background-image: url('img/1.jpg')">
-		<nav class="header-top">	
+	<header class="header" style="background-image: url('img/1.jpg')" id="header">
+		<nav class="header-top" id="header-panel">	
 			<div class="container">
 				<div class="row">
 
@@ -63,10 +69,10 @@
 								</span>
 							</button>
 
-							<ul class="menu hidden-sm hidden-xs">
-								<li class="menu__item is-active"><a href="#">Услуги</a></li>
-								<li class="menu__item"><a href="#">О компании</a></li>
-								<li class="menu__item"><a href="#">Контакты</a></li>
+							<ul class="menu hidden-sm hidden-xs" id="menu"> 
+								<li class="menu__item"><a href="#services">Услуги</a></li>
+								<li class="menu__item"><a href="#about">О компании</a></li>
+								<li class="menu__item"><a href="#contact">Контакты</a></li>
 							</ul>
 						</menu>
 					</div>
@@ -101,7 +107,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
-							<a class="header-bottom__item" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>г.Слуцк ул. Ленина 189</a>
+							<a class="header-bottom__item" href="#contact"><i class="fa fa-map-marker" aria-hidden="true"></i>г.Слуцк ул. Ленина 189</a>
 						</div>
 						<div class="col-sm-4">
 							<div class="header-bottom__item"><a href="tel: 375291062314" class="phone"><i class="fa fa-mobile" aria-hidden="true"></i>+ 375 (29) 106-23-14</a> <a href="tel: 375291062314" class="phone">+ 375 (29) 106-23-14</a></div>
@@ -118,7 +124,7 @@
 		</div>
 	</header>
 
-	<section class="services s-gray">
+	<section class="services s-gray" id="services">
 		<div class="container">
 			<div class="row">
 				<h2 class="s-head">Услуги</h2>
@@ -246,17 +252,20 @@
 		</div>
 	</section>
 
-	<section class="about s-gray">
+	<section class="about s-gray" id="about">
 		<div class="container">
 			<div class="row">
 				<h2 class="s-head">О компании</h2>
-				<div class="col-sm-6"><p class="about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вопрос точках наш свое, большой даль. О себя диких продолжил, большого заголовок грустный необходимыми коварных правилами. Языком текстов скатился назад.</p></div>
+				<div class="col-sm-6">
+					<p class="about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вопрос точках наш свое, большой даль. О себя диких продолжил, большого заголовок грустный необходимыми коварных правилами. Языком текстов скатился назад.</p>
+					<p class="about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вопрос точках наш свое, большой даль. О себя диких продолжил, большого заголовок грустный необходимыми коварных правилами. Языком текстов скатился назад.</p>
+				</div>
 				<div class="col-sm-6"><p class="about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вопрос точках наш свое, большой даль. О себя диких продолжил, большого заголовок грустный необходимыми коварных правилами. Языком текстов скатился назад.</p></div>
 			</div>
 		</div>
 	</section>
 	
-	<footer class="footer" style="background-image: url(img/footer.png);">
+	<footer class="footer" style="background-image: url(img/footer.png);" id="contact">
 		<div class="container">
 			<div class="row">
 				<h2 class="s-head">Контакты</h2>
