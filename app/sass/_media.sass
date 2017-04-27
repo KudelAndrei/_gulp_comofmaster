@@ -49,12 +49,30 @@
 	.header .header-center 
 		.header-plus
 			margin-left: 30px
-
-
+	.header-bottom 
+		.header-bottom__item
+			margin-bottom: 10px
+			display: inline-block
+			text-align: left
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.header .logo img
+		margin-bottom: 5px
+	.header .flex-center
+		transform: translateY(-10%)
+	.header .header-center .header-plus
+		margin-left: 5px
+	.header .header-center .header__head
+		font-size: 28px
+		line-height: 1.4
+	.header .header-center .header-plus .header-plus__item
+		font-size: 15px
+	.header-bottom
+		text-align: left
+	.hamburger
+		position: absolute
+		left: -10px
 
 
 /* Custom, iPhone Retina */
