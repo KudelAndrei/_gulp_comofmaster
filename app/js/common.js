@@ -18,7 +18,8 @@ $(document).ready(function(){
 
 	/* слайдер */
 	$('.owl-review').owlCarousel({
-		nav: false,
+		items: 1,
+		center: true,
 	});
 
 
@@ -38,13 +39,16 @@ $(document).ready(function(){
 		});
 	});
 
-	/* плавный переход по ссылкам  */
-	$(".menu").on("click","a", function (event) {
+	var scrollLink = function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
 		top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top - 60}, 1000);
-	});
+		$('body,html').animate({scrollTop: (top - 60)}, 1000);
+	};
+
+	/* плавный переход по ссылкам  */
+	$("#top").click(scrollLink);
+	$('.menu__item a').click(scrollLink);
 
 	/* функция для активации меню при скроле */
 	$(window).scroll(function(){
@@ -80,7 +84,11 @@ $(document).ready(function(){
 			$("#menu a[href*=contact]").addClass('is-active');
 		}
 		
-
+		if(wScroll > (topServices - 100)){
+			$('#top').addClass('is-active');
+		} else {
+			$('#top').removeClass('is-active');
+		}
 
 	});
 

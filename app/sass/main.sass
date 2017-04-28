@@ -336,8 +336,8 @@ a, button
 			max-height: 100px
 
 /* отзывы */
-.rewiev
-
+.review
+	padding-bottom: 60px
 
 /* футер */
 .footer
@@ -350,6 +350,9 @@ a, button
 		@extend .before
 		background-color: rgba(#fff, .6)
 	
+	.footer__head
+		font-size: 24px
+
 	.contacts
 		.contacts__item
 			margin: 15px 0
@@ -376,5 +379,34 @@ a, button
 	background-color: $dark
 	color: rgba(#fff, .7)
 	font-weight: 300
+
+
+/* на верх */
+.top
+	position: fixed
+	display: block
+	width: 50px
+	height: 50px
+	bottom: 20px
+	right: 20px
+	transform: translateX(200%)
+	color: #fff
+	background-color: $blue
+	opacity: 0.2
+	border-radius: 50%
+	z-index: 20
+	font-size: 30px
+	text-align: center
+	transition: opacity, transform, 0.2s ease
+	.fa
+		line-height: 50px
+	&:hover
+		opacity: 1
+	&.is-active
+		transform: translate(0)
+		opacity: .5
+
+
+
 
 @import "media"
