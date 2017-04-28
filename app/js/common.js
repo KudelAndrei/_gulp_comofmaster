@@ -10,25 +10,35 @@ $(document).ready(function(){
 		menuDown();
 	});
 
+	/* функция скрытия мобильного меню */
 	menuDown = function(){
-		$('#hamburger').removeClass('hamburger--slider-r');
+		$('#hamburger').removeClass('is-active');
 		$('#menu').slideUp();
 	};
 
+	/* слайдер */
+	$('.owl-review').owlCarousel({
+		nav: false,
+	});
+
+
+	/* всплывающая форма обратной связи */
 	$('.popup-with-form').magnificPopup({
 		type: 'inline',
 		preloader: false,
 		focus: '#name',
 	});
 
+	/* открытие мобильного меню при нажатии */
 	$('#hamburger').click(function(){
-		$(this).toggleClass('hamburger--slider-r');
+		$(this).toggleClass('is-active');
 		$('#menu').slideToggle();
 		$('#menu .menu__item').click(function(){
 			$('#menu').slideUp();
 		});
 	});
 
+	/* плавный переход по ссылкам  */
 	$(".menu").on("click","a", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
@@ -36,8 +46,10 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop: top - 60}, 1000);
 	});
 
+	/* функция для активации меню при скроле */
 	$(window).scroll(function(){
-		menuDown();
+
+		menuDown(); /* вызов функции */
 		
 		var wScroll = $(this).scrollTop(),
 				hPanel = $("#header-panel").height(),
