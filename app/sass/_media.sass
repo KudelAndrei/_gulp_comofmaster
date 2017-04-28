@@ -1,11 +1,19 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1360px)
+	.header .menu .menu__item>a
+		padding: 20px 20px
+	.header .logo
+		padding-top: 10px
+	.header .call
+		margin-top: 6px
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	.header .menu .menu__item.is-active a
-		padding: 35px 18px
+	.header .menu .menu__item>a
+		padding: 20px 18px
 
 	.header .header-center 
 		.header__head
@@ -27,6 +35,9 @@
 	.header 
 		.header-top
 			background-color: rgba($dark, 0.5)
+			&.active
+				.call
+					margin-top: 6px
 	.header .logo
 			display: block
 			padding-top: 4px
@@ -34,11 +45,26 @@
 	.header 
 		.call 
 			text-align: right
-			margin-top: 4px
+			margin-top: 6px
 			.phone
 				display: block
 			.callback
 				font-size: 18px
+	
+	/* адаптивное меню */
+	.header
+		.menu	
+			display: none
+			position: absolute
+			width: 200px
+			z-index: 50
+			left: -130px
+			.menu__item
+				width: 100%	
+				a
+					display: block
+					padding: 15px 20px
+					background-color: $dark
 
 
 /* Small Devices, Tablets */
@@ -54,6 +80,7 @@
 			margin-bottom: 10px
 			display: inline-block
 			text-align: left
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -73,6 +100,11 @@
 	.hamburger
 		position: absolute
 		left: -10px
+	
+	.header
+		.menu	
+			top: 59px
+			left: -152px
 
 
 /* Custom, iPhone Retina */
@@ -99,7 +131,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-	/**/
+	.menu
+		display: block!important
 
 
 /* Large Devices, Wide Screens */

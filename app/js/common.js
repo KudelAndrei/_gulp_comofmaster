@@ -6,22 +6,38 @@ $(window).on('load', function(){
 /* scripts ready */
 $(document).ready(function(){
 
+	$(window).on('resize', function(){
+		menuDown();
+	});
+
+	menuDown = function(){
+		$('#hamburger').removeClass('hamburger--slider-r');
+		$('#menu').slideUp();
+	};
+
 	$('.popup-with-form').magnificPopup({
 		type: 'inline',
 		preloader: false,
 		focus: '#name',
 	});
 
-	$("#menu").on("click","a", function (event) {
+	$('#hamburger').click(function(){
+		$(this).toggleClass('hamburger--slider-r');
+		$('#menu').slideToggle();
+		$('#menu .menu__item').click(function(){
+			$('#menu').slideUp();
+		});
+	});
+
+	$(".menu").on("click","a", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
 		top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top - 60}, 1000);
 	});
 
-
-
 	$(window).scroll(function(){
+		menuDown();
 		
 		var wScroll = $(this).scrollTop(),
 				hPanel = $("#header-panel").height(),
