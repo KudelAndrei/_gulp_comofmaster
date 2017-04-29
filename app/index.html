@@ -344,23 +344,18 @@
 	<form id="callback" class="white-popup-block mfp-hide">
 		<h3 class="form__head">Обратная связь</h3>
 		<p class="form__desc">Заполните данные.</p>
-			<li>
-				<label for="name">Name</label>
-				<input id="name" name="name" type="text" placeholder="Name" required="">
-			</li>
-			<li>
-				<label for="email">Email</label>
-				<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
-			</li>
-			<li>
-				<label for="phone">Phone</label>
-				<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
-			</li>
-			<li>
-				<label for="textarea">Textarea</label><br>
-				<textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
-			</li>
-</form>
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="admin@mail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		
+		<!-- END Hidden Required Fields -->
+		<input type="text" name="Name" placeholder="You name..." required><br>
+		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+		<input type="text" name="Phone" placeholder="You phone..."><br>
+
+	</form>
 
 	<script src="js/scripts.min.js"></script>
 
