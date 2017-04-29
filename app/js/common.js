@@ -64,6 +64,7 @@ $(document).ready(function(){
 
 	/* плавный переход по ссылкам  */
 	$("#top").click(scrollLink);
+	$("#map").click(scrollLink);
 	$('.menu__item a').click(scrollLink);
 
 	/* функция для активации меню при скроле */

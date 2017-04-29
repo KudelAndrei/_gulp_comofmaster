@@ -107,7 +107,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
-							<a class="header-bottom__item" href="#contact"><i class="fa fa-map-marker" aria-hidden="true"></i>г.Слуцк ул. Ленина 189</a>
+							<a id="map" class="header-bottom__item" href="#contact"><i class="fa fa-map-marker" aria-hidden="true"></i>г.Слуцк ул. Ленина 189</a>
 						</div>
 						<div class="col-sm-4">
 							<div class="header-bottom__item"><a href="tel: 375291062314" class="phone"><i class="fa fa-mobile" aria-hidden="true"></i>+ 375 (29) 106-23-14</a> <a href="tel: 375291062314" class="phone">+ 375 (29) 106-23-14</a></div>
@@ -244,7 +244,7 @@
 		</div>
 	</section>
 
-	<section class="partners">
+	<section class="partners hidden-xs">
 		<div class="container">
 			<div class="row">
 				<div class="partners__item"><img src="img/Производители/acer.png" alt="alt"></div>
@@ -341,20 +341,29 @@
 	<a id="top" href="#header" class="top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 
 	<!-- форма обратной связи -->
-	<form id="callback" class="white-popup-block mfp-hide">
-		<h3 class="form__head">Обратная связь</h3>
-		<p class="form__desc">Заполните данные.</p>
-
-		<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Site Name">
-		<input type="hidden" name="admin_email" value="admin@mail.com">
-		<input type="hidden" name="form_subject" value="Form Subject">
+	<form id="callback" class="form white-popup-block mfp-hide">
 		
-		<!-- END Hidden Required Fields -->
-		<input type="text" name="Name" placeholder="You name..." required><br>
-		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-		<input type="text" name="Phone" placeholder="You phone..."><br>
+		<div class="row">
+			<div class="col-lg-6">
+				<h3 class="form__head">Задать вопрос</h3>
+				<p class="form__desc">Ответим в ближайшее время</p>
+				<img class="form__img" src="img/call.png" alt="sef">
+			</div>
+			<div class="col-lg-6">
 
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="compofmaster.by">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="question">
+				
+				<!-- END Hidden Required Fields -->
+				<input type="text" name="Name" placeholder="Ваше Имя..." required>
+				<input type="text" name="phone" placeholder="Ваш телефон..." required>
+				<textarea type="text" name="message" placeholder="You phone..."></textarea>
+				<input type="submit" class="button" value="Задать вопрос">
+
+			</div>
+		</div>
 	</form>
 
 	<script src="js/scripts.min.js"></script>
