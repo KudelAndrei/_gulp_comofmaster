@@ -129,17 +129,19 @@ a, button
 		display: block
 		color: #fff
 		line-height: 1.3
-		padding-top: 22px
+		padding-top: 20px
 		transition: padding ease-in-out 0.3s
 		img 
 			width: 50px
 			float: left
 			margin-right: 10px
 		.logo__head
-			font-size: 22px
+			font-size: 20px
 			margin: 0
+			font-style: italic
 		.logo__desc
-			font-size: 18px
+			font-size: 14px
+			font-weight: 300
 			margin: 0
 		&:hover
 			text-decoration: none
@@ -182,10 +184,10 @@ a, button
 		border: none
 		padding: 0
 		outline: none
-		border-bottom: 2px dotted $accent
+		border-bottom: 1px dotted $accent
 		transition: border-bottom 0.1s ease
 		&:hover
-			border-bottom: 2px dotted transparent
+			border-bottom: 1px dotted transparent
 .phone
 	color: #fff
 	display: inline-block
@@ -220,7 +222,8 @@ a, button
 
 	.header-plus
 		text-align: left
-		margin-left: 126px
+		max-width: 410px
+		margin: 0 auto
 		margin-bottom: 30px
 		.header-plus__item
 			display: block
@@ -285,7 +288,6 @@ a, button
 		padding: 20px
 		transition: transform 0.4s ease-in-out
 		&:hover
-			transform: scale(1.05)
 			&::before
 				background-color: rgba($blue, 0.4)
 		&::before
