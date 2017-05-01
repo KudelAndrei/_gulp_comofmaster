@@ -20,6 +20,7 @@ $(document).ready(function(){
 	$('.owl-review').owlCarousel({
 		items: 1,
 		center: true,
+		dots: true,
 	});
 
 	//E-mail Ajax Send
