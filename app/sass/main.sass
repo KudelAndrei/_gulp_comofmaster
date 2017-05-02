@@ -346,13 +346,21 @@ a, button
 		text-align: center
 		.owl-review__img
 			width: 100px
+			height: 100px
 			display: inline-block
-			margin-bottom: 20px
+			margin-bottom: 10px
+			overflow: hidden
+			border-radius: 50%
 			img
 				max-width: 100%
 		.owl-review__name
 			font-size: 26px
 			color: #000
+		.owl-review__desc
+			margin-bottom: 60px
+		.owl-review__item
+			display: inline-block
+			max-width: 800px
 
 .owl-dots
 	.owl-dot
@@ -407,11 +415,14 @@ a, button
 		text-transform: uppercase
 		font-size: 28px
 		font-family: "RobotoBold", sans-serif
+		color: $accent
 		margin: 0
 	.form__desc	
 		margin-top: 0
 		font-size: 20px
 		color: #444
+	.form__img
+		margin-bottom: 20px
 	input, textarea
 		display: block
 		width: 100%
@@ -429,6 +440,8 @@ a, button
 		text-align: center
 		padding: 10px 
 
+.form2
+	max-width: 700px
 
 .copyright
 	padding: 30px 0

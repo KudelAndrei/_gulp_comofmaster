@@ -21,17 +21,18 @@ $(document).ready(function(){
 		items: 1,
 		center: true,
 		dots: true,
+		smartSpeed: 600,
 	});
 
 	//E-mail Ajax Send
-	$("#callback").submit(function() { //Change
+	$("#callback", "#callback2").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("Спасибо за заявку!");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
@@ -44,7 +45,7 @@ $(document).ready(function(){
 	$('.popup-with-form').magnificPopup({
 		type: 'inline',
 		preloader: false,
-		focus: '#name',
+		mainClass: 'my-mfp-zoom-in',
 	});
 
 	/* открытие мобильного меню при нажатии */
