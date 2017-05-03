@@ -107,11 +107,13 @@ a, button
 	min-height: 620px
 	height: 100vh
 	position: relative
+	background-repeat: no-repeat
 	&::before
 		@extend .before
+		background-color: rgba(#000, .8)
 
 	.header-top
-		background-color: $dark
+		background-color: rgba($dark, 0.9)
 		position: absolute
 		width: 100%
 		z-index: 30
@@ -157,17 +159,19 @@ a, button
 				display: block
 				box-sizing: border-box
 				padding: 35px 30px 35px
+				text-transform: uppercase
 				color: #fff
 				line-height: 1.5
 				border-top: 5px solid transparent
 				transition: background-color, border, 0.2s ease-in-out
 				transition: padding, background-color, ease-in-out 0.3s
 				&.is-active
-					background-color: #424141
-					border-top: 5px solid $blue
+					background-color: rgba($blue, 0.95)
+					border-top: 5px solid darken($blue, 10%)
 			&:hover
 				>a 
-					background-color: #424141
+					border-top: 5px solid rgba($blue, 0.95)
+					background-color: #000
 					text-decoration: none
 
 .flex-center
@@ -451,6 +455,8 @@ a, button
 	background-color: $dark
 	color: rgba(#fff, .7)
 	font-weight: 300
+	font-size: 14px
+	text-align: center
 
 
 /* на верх */
