@@ -21,6 +21,8 @@ $(document).ready(function(){
 		items: 1,
 		center: true,
 		dots: true,
+		autoplay: true,
+		autoplayTimeout: 5000,
 		smartSpeed: 600,
 	});
 
@@ -36,7 +38,7 @@ $(document).ready(function(){
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
-			}, 1000);
+			}, 500);
 		});
 		return false;
 	});
@@ -45,6 +47,8 @@ $(document).ready(function(){
 	$('.popup-with-form').magnificPopup({
 		type: 'inline',
 		preloader: false,
+		midClick: true,
+		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in',
 	});
 

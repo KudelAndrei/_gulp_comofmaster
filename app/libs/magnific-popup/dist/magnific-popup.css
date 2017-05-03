@@ -7,8 +7,6 @@
 	-o-transition: all 0.2s ease-in-out; 
 	transition: all 0.2s ease-in-out; 
 
-
-
 	-webkit-transform: scale(0.8); 
 	-moz-transform: scale(0.8); 
 	-ms-transform: scale(0.8); 
@@ -38,24 +36,6 @@
 	opacity: 0;
 }
 
-/* Dark overlay, start state */
-.my-mfp-zoom-in.mfp-bg {
-	opacity: 0;
-	-webkit-transition: opacity 0.3s ease-out; 
-	-moz-transition: opacity 0.3s ease-out; 
-	-o-transition: opacity 0.3s ease-out; 
-	transition: opacity 0.3s ease-out;
-}
-/* animate in */
-.my-mfp-zoom-in.mfp-ready.mfp-bg {
-	opacity: 0.8;
-}
-/* animate out */
-.my-mfp-zoom-in.mfp-removing.mfp-bg {
-	opacity: 0;
-}
-
-
 
 /* Magnific Popup CSS */
 .white-popup-block {
@@ -66,9 +46,11 @@
   margin: 0 auto;
   padding: 20px;
 }
+
 .white-popup-block .mfp-close {
   position: absolute;
 }
+
 .mfp-bg {
   top: 0;
   left: 0;
