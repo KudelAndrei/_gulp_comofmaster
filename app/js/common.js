@@ -82,6 +82,7 @@ $(document).ready(function(){
 				hPanel = $("#header-panel").height(),
 				topServices = $('#services').offset().top - hPanel*1.2,
 				topAbout = $('#about').offset().top - hPanel*1.2,
+				topReview = $('#review').offset().top - hPanel*1.2,
 				topContact = $('#contact').offset().top - hPanel*3.4;
 
 		if(wScroll > ( hPanel/2)){
@@ -101,6 +102,10 @@ $(document).ready(function(){
 		if(wScroll > topAbout){
 			$('#menu').find('a').removeClass('is-active');
 			$("#menu a[href*=about]").addClass('is-active');
+		}
+		if(wScroll > topReview){
+			$('#menu').find('a').removeClass('is-active');
+			$("#menu a[href*=review]").addClass('is-active');
 		}
 		if(wScroll > topContact){
 			$('#menu').find('a').removeClass('is-active');
