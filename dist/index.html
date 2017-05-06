@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>COMPOFMATER - Компьютерный сервис</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="is-home">
+
+	<!-- прелоадер -->
+	<div class="preloader">
+		<div class="cssload-loader">
+			<div class="cssload-flipper">
+				<div class="cssload-front"></div>
+				<div class="cssload-back"></div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header" style="background-image: url('img/2.jpg')" id="header">
+		<nav class="header-top" id="header-panel">	
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-3 col-md-4 col-xs-2">
+						<a href="#" class="logo clearfix" title="COMPOFMATER - Компьютерный сервис">
+							<img src="img/logo.png" alt="COMPOFMATER Компьютерный сервис">
+							<h1 class="logo__head hidden-xs hidden-sm">COMPOFMATER</h1>
+							<h2 class="logo__desc hidden-xs hidden-sm">Компьютерный сервис</h2>
+						</a>
+					</div>
+
+					<div class="col-md-push-5 col-lg-push-7 col-lg-2 col-md-3 col-xs-8">
+						<div class="call">
+							<a href="tel: 375291112233" class="phone"><span><i class="fa fa-phone" aria-hidden="true"></i>+375 (29)</span> 702-22-68</a>
+							<a class="callback popup-with-form" href="#callback">Задать вопрос</a>
+						</div>
+					</div>
+
+					<div class="col-md-pull-3 col-lg-pull-2 col-lg-7 col-md-5 col-xs-2">
+						<menu class="clearfix">
+
+							<button id="hamburger" class="hamburger hamburger--spring-r visible-sm visible-xs" type="button"> <!-- hamburger--spring-r -->
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+							</button>
+
+							<ul class="menu" id="menu"> 
+								<li class="menu__item"><a href="#services">Услуги</a></li>
+								<li class="menu__item"><a href="#about">О компании</a></li>
+								<li class="menu__item"><a href="#contact">Контакты</a></li>
+							</ul>
+						</menu>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+		<div class="header-center">
+			<div class="flex-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<h1 class="header__head">Компьютерный сервис</h1>
+							<h2 class="header__desc">Огромный спектр компьютерных услуг для дома и офиса</h2>
+							<ul class="header-plus">
+								<li class="header-plus__item"><i class="fa fa-check-square-o" aria-hidden="true"></i>Выезд по городу</li>
+								<li class="header-plus__item"><i class="fa fa-check-square-o" aria-hidden="true"></i>Удаленная поддержка</li>
+								<li class="header-plus__item"><i class="fa fa-check-square-o" aria-hidden="true"></i>Антивирус в подарок</li>
+								<li class="header-plus__item"><i class="fa fa-check-square-o" aria-hidden="true"></i>Точный расчет стоимости услуг</li>
+								<li class="header-plus__item"><i class="fa fa-check-square-o" aria-hidden="true"></i>Инженер с опытом работы от 3 ЛЕТ</li>
+							</ul>
+							<a class="button header__btn popup-with-form" href="#callback2">Вызвать мастера</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="flex-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<a id="map" class="header-bottom__item" href="#maps"><i class="fa fa-map-marker" aria-hidden="true"></i>г.Слуцк ул. Ленина 189</a>
+						</div>
+						<div class="col-sm-4">
+							<div class="header-bottom__item"><a href="tel: 375291062314" class="phone"><i class="fa fa-mobile" aria-hidden="true"></i>+ 375 (29) 106-23-14</a> <a href="tel: 375291062314" class="phone">+ 375 (29) 106-23-14</a></div>
+						</div>
+						<div class="col-sm-4">
+							<ul class="soc hidden-xs">
+								<li class="soc__item"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li class="soc__item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="services s-gray" id="services">
+		<div class="container">
+			<div class="row">
+				<h2 class="s-head">Услуги</h2>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Navitel.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Windows-10.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Подбор и сборка Компьютеров <br> ноутбуков</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Архивирование-БД.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Вирусы.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Востановление-данных.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Интернета.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Комплектующие.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/ЛВС.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Ноутбук.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Подбор-и-сборка.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Принтер.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Программное-обеспечение.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Сервер.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Системный-администратор.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Создание-сайтов.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="services__card" style="background-image: url(img/Услуги/Navitel.png);">
+						<div class="flex-center">
+							<div class="services__icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+							<h3 class="services__head">Ремонт компьютеров</h3>
+						</div>
+						<div class="services__price"><span>20 руб.</span></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="partners hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="partners__item"><img src="img/Производители/acer.png" alt="alt"></div>
+				<div class="partners__item"><img src="img/Производители/asus.jpg" alt="alt"></div>
+				<div class="partners__item"><img src="img/Производители/dell.jpg" alt="alt"></div>
+				<div class="partners__item"><img src="img/Производители/hp.png" alt="alt"></div>
+				<div class="partners__item"><img src="img/Производители/lenovo.png" alt="alt"></div>
+				<div class="partners__item"><img src="img/Производители/msi.png" alt="alt"></div>
+				<div class="partners__item"><img src="img/Производители/packard-bell.jpg" alt="alt"></div>
+				<div class="partners__item"><img src="img/Производители/samsung.jpg" alt="alt"></div>
+				<div class="partners__item"><img src="img/Производители/Sony.png" alt="alt"></div>
+				<div class="partners__item"><img src="img/Производители/toshiba.gif" alt="alt"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about s-gray" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="s-head">О компании</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<p class="about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вопрос точках наш свое, большой даль. О себя диких продолжил, большого заголовок грустный необходимыми коварных правилами. Языком текстов скатился назад.</p>
+					<p class="about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вопрос точках наш свое, большой даль. О себя диких продолжил, большого заголовок грустный необходимыми коварных правилами. Языком текстов скатился назад.</p>
+				</div>
+				<div class="col-sm-6"><p class="about__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Вопрос точках наш свое, большой даль. О себя диких продолжил, большого заголовок грустный необходимыми коварных правилами. Языком текстов скатился назад.</p></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="review">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="s-head">Отзывы</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="owl-review owl-carousel">
+
+						<div class="owl-review__item">
+							<div class="owl-review__img"><img src="img/отзывы/храпа.png" alt="alt"></div>
+							<div class="owl-review__name">Вадим Вадимович</div>
+							<p class="owl-review__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Дал заглавных дорогу снова, несколько буквоград себя. Однажды послушавшись коварных знаках то пояс, сих правилами снова пустился свою подпоясал его.</p>
+						</div>
+						
+						<div class="owl-review__item">
+							<div class="owl-review__img"><img src="img/отзывы/храпа.png" alt="alt"></div>
+							<div class="owl-review__name">Вадим Вадимович</div>
+							<p class="owl-review__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Дал заглавных дорогу снова, несколько буквоград себя. Однажды послушавшись коварных знаках то пояс, сих правилами снова пустился свою подпоясал его.</p>
+						</div>
+
+						<div class="owl-review__item">
+							<div class="owl-review__img"><img src="img/отзывы/храпа.png" alt="alt"></div>
+							<div class="owl-review__name">Вадим Вадимович</div>
+							<p class="owl-review__desc">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Дал заглавных дорогу снова, несколько буквоград себя. Однажды послушавшись коварных знаках то пояс, сих правилами снова пустился свою подпоясал его.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer" style="background-image: url(img/footer.png);" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="s-head">Контакты</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<h3 class="footer__head">На карте</h3>
+					<div class="maps" id="maps"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b5107c37ba97165c3b311dff0e201ed72dc56115ad1eff881c7d3fef10ad524&amp;width=100%&amp;height=450px&amp;lang=ru_RU&amp;scroll=false"></script></div>
+				</div>
+				<div class="col-md-4">
+					<h3 class="footer__head">Контакты</h3>
+					<ul class="contacts">
+						<li class="contacts__item"><strong>Компания</strong> "VISit"</li>
+						<li class="contacts__item"><strong><i class="fa fa-map-marker" aria-hidden="true"></i> Адрес</strong> г. Слуцк, улица Ленина 189</li>
+						<li class="contacts__item"><strong><i class="fa fa-user-circle-o" aria-hidden="true"></i> Контактное лицо</strong> Вадим</li>
+						<li class="contacts__item"><strong><i class="fa fa-phone-square" aria-hidden="true"></i> Контактные номера</strong> <a href="tel:+375(29)1062314">+375(29) 106-23-14</a> <br> <a href="tel:+375(25)7077387">+375(25) 707-73-87</a></li>
+						<li class="contacts__item"><strong><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</strong> VSIT@mail.ru</li>
+						<li class="contacts__item">
+							<ul class="soc">
+								<li class="soc__item"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li class="soc__item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12"><i class="fa fa-copyright" aria-hidden="true"></i> COMPOFMATER - Компьютерный сервис 2017</div></div>
+			</div>
+		</div>
+	</div>
+
+	<a id="top" href="#header" class="top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+	<!-- форма обратной связи (вопрос) -->
+	<form id="callback" class="form white-popup-block zoom-anim-dialog mfp-hide">
+		
+		<div class="row">
+			<div class="col-lg-6">
+				<h3 class="form__head">Задать вопрос</h3>
+				<p class="form__desc">Ответим в ближайшее время</p>
+				<img class="form__img" src="img/call.png" alt="sef">
+			</div>
+			<div class="col-lg-6">
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="compofmaster.by">
+				<input type="hidden" name="admin_email" value="kudel1995@mail.ru">
+				<input type="hidden" name="form_subject" value="Заявка вопроса">
+				
+				<!-- END Hidden Required Fields -->
+				<input type="text" name="Name" placeholder="Ваше Имя..." required>
+				<input type="phone" name="phone" placeholder="Ваш телефон..." required>
+				<textarea type="text" name="message" placeholder="Вопрос..."></textarea>
+				<input type="submit" class="button" value="Задать вопрос">
+
+			</div>
+		</div>
+	</form>
+
+		<!-- форма обратной связи (вызвать мастера) -->
+	<form id="callback2" class="form form2 white-popup-block zoom-anim-dialog mfp-hide">
+		
+		<div class="row">
+
+			<div class="col-sm-6">
+				<h3 class="form__head">Вызвать мастера</h3>
+				<p class="form__desc">Перезвоним в ближайшее время</p>
+			</div>
+
+			<div class="col-sm-6">
+				<img class="form__img" src="img/call.png" alt="sef">
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="compofmaster.by">
+				<input type="hidden" name="admin_email" value="kudel1995@mail.ru">
+				<input type="hidden" name="form_subject" value="Вызов мастера">
+				
+				<!-- END Hidden Required Fields -->
+				<input type="phone" name="phone" placeholder="Ваш телефон..." required>
+				<input type="submit" class="button" value="Вызвать мастера">
+
+			</div>
+
+			</div>
+		</div>
+	</form>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
