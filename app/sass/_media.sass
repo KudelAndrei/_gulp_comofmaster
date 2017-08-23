@@ -50,17 +50,15 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	.header 
+	.header
 		.header-top
 			background-color: rgba($dark, 0.5)
 			&.active
 				.call
-					margin-top: 6px
-	.header .logo
+					margin-top: 6px 
+		.logo
 			display: block
 			padding-top: 4px
-
-	.header 
 		.call 
 			text-align: right
 			margin-top: 6px
@@ -68,9 +66,6 @@
 				display: block
 			.callback
 				font-size: 18px
-	
-	/* адаптивное меню */
-	.header
 		.menu	
 			display: none
 			position: absolute
@@ -84,6 +79,10 @@
 					padding: 15px 20px
 					background-color: $dark
 
+	.footer
+		&::before
+			left: 0
+			width: 100%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)

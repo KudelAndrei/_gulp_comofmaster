@@ -29,7 +29,7 @@ body textarea:required:valid
 /* исправляет баг с модальными окнами */
 html
 	margin: 0!important
-	overflow: visible!important 
+	overflow-y: visible!important 
 
 html, body
 	height: 100%
@@ -392,8 +392,9 @@ a, button
 	position: relative
 	&::before
 		@extend .before
-		background-color: rgba(#fff, .6)
-	
+		background-color: rgba(#f9c869, .8)
+		width: 40%
+		left: 60%
 	.footer__head
 		font-size: 24px
 
